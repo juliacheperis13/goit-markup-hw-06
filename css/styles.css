@@ -782,6 +782,14 @@ textarea {
   background-repeat: no-repeat;
 }
 
+@media (min-resolution: 192dpi) {
+  .order-section {
+    background-image: linear-gradient(rgba(var(--navy-blue-rgb), 0.7),
+    rgba(var(--navy-blue-rgb), 0.7)),
+  url('../images/general/people-office@2x.jpg');
+  }
+}
+
 .advantages-section {
   padding: 96px 0;
   /* padding: 120px 0; */
