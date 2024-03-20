@@ -22,21 +22,38 @@
 
   <body>
     <header class="header">
-      <div class="container between flex">
+      <div class="container between flex mobile-header">
         <nav class="nav flex">
           <a class="logo" href="./index.html"
             ><span class="tc-iris">WEB</span
             ><span class="tc-navy-blue">STUDIO</span></a
           >
+        </nav>
 
+        <button
+          class="mobile-menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="container between full-menu">
+        <nav class="nav flex">
+          <a class="logo" href="./index.html"
+            ><span class="tc-iris">WEB</span
+            ><span class="tc-navy-blue">STUDIO</span></a
+          >
           <ul class="nav-list flex">
             <li>
-              <a href="./index.html" class="nav-link block">Studio</a>
+              <a href="./index.html" class="nav-link block"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-link block nav-link-active"
-                >Portfolio</a
-              >
+              <a href="./portfolio.html" class="nav-link block nav-link-active">Portfolio</a>
             </li>
             <li>
               <a href="#" class="nav-link block">Contacts</a>
@@ -46,12 +63,12 @@
 
         <address>
           <ul class="flex address-list">
-            <li>
+            <li class="address-list-item">
               <a href="mailto:info@devstudio.com" class="address-link block"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="address-list-item">
               <a href="tel:+110001111111" class="address-link block"
                 >+11 (000) 111-11-11</a
               >
@@ -324,7 +341,7 @@
 
     <footer class="bg-navy-blue footer">
       <div class="container flex">
-        <div class="logo-container mr-15">
+        <div class="logo-container">
           <a class="logo block mb-2" href="./index.html"
             ><span class="tc-iris">WEB</span
             ><span class="tc-white">STUDIO</span></a
@@ -335,7 +352,7 @@
           </p>
         </div>
 
-        <div class="social-media-container mr-10">
+        <div class="social-media-container">
           <p class="header-4 tc-white mb-2 social-title">Social media</p>
           <ul class="social-contacts-list flex">
             <li>
@@ -381,7 +398,7 @@
               type="email"
               name="email"
               placeholder="E-mail"
-              class="input input-primary mr-3"
+              class="input input-primary subscribe-form-input"
             />
             <button
               type="submit"
@@ -396,5 +413,14 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
