@@ -625,6 +625,11 @@ textarea {
   margin: 0 0 36px 0;
 }
 
+.mobile-address-link:hover,
+.mobile-address-link:focus {
+  color: var(--ocean);
+}
+
 .mobile-address-phone {
   font-family: 'Roboto', sans-serif;
   font-size: 36px;
